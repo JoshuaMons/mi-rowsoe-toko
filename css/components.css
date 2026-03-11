@@ -28,11 +28,11 @@
 /* ----- Hero ----- */
 .hero {
   color: white;
-  padding: 5.5rem var(--gap) 7rem;
+  padding: 3.5rem var(--gap) 4.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: min(420px, 55vh);
+  min-height: min(280px, 38vh);
   /* Fallback if banner images are not yet added */
   background: linear-gradient(135deg, var(--leaf) 0%, var(--leaf-light) 50%, var(--leaf) 100%);
 }
