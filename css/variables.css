@@ -1,0 +1,22 @@
+/**
+ * Design tokens — change colors and spacing here to update the whole site.
+ */
+:root {
+  /* Colors */
+  --leaf: #2d5a27;
+  --leaf-light: #4a7c43;
+  --earth: #8b6914;
+  --cream: #faf6f0;
+  --warm-white: #fffbf5;
+  --text: #2c2416;
+  --text-muted: #5c5346;
+
+  /* Layout */
+  --container-max: 1100px;
+  --section-padding: 4rem;
+  --gap: 1.5rem;
+
+  /* Typography */
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}

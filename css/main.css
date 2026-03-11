@@ -1,0 +1,9 @@
+/**
+ * Main stylesheet — imports all CSS. Edit the files below to maintain the site.
+ * - variables.css  → colors, spacing, fonts
+ * - base.css       → reset, body, .container
+ * - components.css → header, nav, sections, cards, gallery, contact, footer
+ */
+@import 'variables.css';
+@import 'base.css';
+@import 'components.css';
