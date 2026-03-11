@@ -28,11 +28,11 @@
 /* ----- Hero ----- */
 .hero {
   color: white;
-  padding: 4.5rem var(--gap) 5.5rem;
+  padding: 5.5rem var(--gap) 7rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 320px;
+  min-height: min(420px, 55vh);
   /* Fallback if banner images are not yet added */
   background: linear-gradient(135deg, var(--leaf) 0%, var(--leaf-light) 50%, var(--leaf) 100%);
 }
@@ -108,17 +108,18 @@
 
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.25rem, 5.5vw, 3.25rem);
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
   font-weight: 700;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
   animation: fade-in-up 0.7s 0.1s ease both;
 }
 
 .tagline {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
   opacity: 0.95;
-  max-width: 480px;
+  max-width: 520px;
   margin: 0 auto;
   animation: fade-in-up 0.7s 0.2s ease both;
 }
@@ -155,7 +156,7 @@
   background: rgba(254, 253, 251, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  padding: 0.9rem var(--gap);
+  padding: 0.5rem var(--gap);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -167,7 +168,8 @@
 .nav .container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  gap: 1.75rem;
   flex-wrap: wrap;
 }
 
@@ -175,7 +177,7 @@
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   position: relative;
   transition: color var(--transition-fast);
 }
@@ -216,6 +218,10 @@
   background: var(--cream);
 }
 
+.section > .container {
+  text-align: center;
+}
+
 .section h2 {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3vw, 2.25rem);
@@ -246,7 +252,7 @@ main .section:first-of-type.is-visible {
 
 /* ----- About ----- */
 .about p {
-  max-width: 640px;
+  max-width: var(--content-max);
   margin: 0 auto 1rem;
   color: var(--text-muted);
   text-align: center;
@@ -327,14 +333,18 @@ main .section:first-of-type.is-visible {
 .section-intro {
   text-align: center;
   color: var(--text-muted);
-  max-width: 560px;
+  max-width: var(--content-max);
   margin: -1rem auto 0;
 }
 
 /* ----- Pakketpunt section ----- */
 .pakketpunt-content {
-  max-width: 640px;
+  max-width: var(--content-max);
   margin: 0 auto;
+}
+
+.pakketpunt-content {
+  text-align: left;
 }
 
 .pakketpunt-content p {
@@ -385,9 +395,9 @@ main .section:first-of-type.is-visible {
 /* ----- Contact ----- */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  max-width: 700px;
+  max-width: var(--container-max);
   margin: 0 auto;
 }
 
@@ -398,6 +408,7 @@ main .section:first-of-type.is-visible {
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(0, 0, 0, 0.04);
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  text-align: left;
 }
 
 .contact-block:hover {
