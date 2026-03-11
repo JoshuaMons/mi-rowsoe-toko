@@ -27,28 +27,49 @@
 
 /* ----- Hero ----- */
 .hero {
-  background: linear-gradient(
-    135deg,
-    var(--leaf) 0%,
-    var(--leaf-light) 35%,
-    #256320 50%,
-    var(--leaf-light) 65%,
-    var(--leaf) 100%
-  );
-  background-size: 200% 200%;
-  animation: gradient-shift 12s ease infinite;
   color: white;
   padding: 4.5rem var(--gap) 5.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 320px;
+  /* Fallback if banner images are not yet added */
+  background: linear-gradient(135deg, var(--leaf) 0%, var(--leaf-light) 50%, var(--leaf) 100%);
 }
 
-.hero::before {
-  content: '';
+/* Slideshow background */
+.hero-slideshow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
+  z-index: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.hero-slide--active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Dark overlay so text stays readable */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 77, 27, 0.75) 0%,
+    rgba(30, 77, 27, 0.6) 50%,
+    rgba(20, 50, 18, 0.85) 100%
+  );
   pointer-events: none;
 }
 
@@ -62,11 +83,13 @@
   background: var(--warm-white);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.04);
+  z-index: 2;
 }
 
-.hero .container {
+.hero .container,
+.hero .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-badge {

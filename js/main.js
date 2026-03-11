@@ -90,6 +90,24 @@
   // Run after service cards and gallery are injected
   initScrollReveal();
 
+  // ----- Hero banner slideshow -----
+  (function () {
+    const slideshow = document.querySelector('.hero-slideshow');
+    if (!slideshow) return;
+    const slides = slideshow.querySelectorAll('.hero-slide');
+    if (slides.length < 2) return;
+    const duration = 5000;
+    let index = 0;
+    function next() {
+      slides[index].classList.remove('hero-slide--active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('hero-slide--active');
+    }
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(next, duration);
+    }
+  })();
+
   function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
