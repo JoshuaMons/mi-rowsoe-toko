@@ -156,7 +156,7 @@
   background: rgba(254, 253, 251, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  padding: 0.5rem var(--gap);
+  padding: 0.35rem var(--gap);
   position: sticky;
   top: 0;
   z-index: 100;
