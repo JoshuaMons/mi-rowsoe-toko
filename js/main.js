@@ -58,6 +58,38 @@
   initSmoothScroll('.nav a[href^="#"]');
   initSmoothScroll('a.service-card[href^="#"]');
 
+  // ----- Scroll reveal (sections, service cards, gallery images) -----
+  function initScrollReveal() {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reducedMotion) {
+      document.querySelectorAll('.section, .service-card, .gallery img').forEach(function (el) {
+        el.classList.add('is-visible');
+      });
+      return;
+    }
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      },
+      { rootMargin: '0px 0px -40px 0px', threshold: 0.05 }
+    );
+    document.querySelectorAll('.section').forEach(function (el) {
+      observer.observe(el);
+    });
+    document.querySelectorAll('.service-card').forEach(function (el) {
+      observer.observe(el);
+    });
+    document.querySelectorAll('.gallery img').forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+  // Run after service cards and gallery are injected
+  initScrollReveal();
+
   function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;

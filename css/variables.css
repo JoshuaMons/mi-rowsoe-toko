@@ -3,20 +3,33 @@
  */
 :root {
   /* Colors */
-  --leaf: #2d5a27;
-  --leaf-light: #4a7c43;
-  --earth: #8b6914;
-  --cream: #faf6f0;
-  --warm-white: #fffbf5;
-  --text: #2c2416;
+  --leaf: #1e4d1b;
+  --leaf-light: #2d6b28;
+  --leaf-glow: rgba(45, 90, 39, 0.4);
+  --earth: #7a5c12;
+  --cream: #f8f4ee;
+  --warm-white: #fefdfb;
+  --text: #1a1612;
   --text-muted: #5c5346;
 
   /* Layout */
-  --container-max: 1100px;
-  --section-padding: 4rem;
+  --container-max: 1120px;
+  --section-padding: 5rem;
   --gap: 1.5rem;
 
   /* Typography */
   --font-sans: 'DM Sans', sans-serif;
   --font-display: 'Playfair Display', serif;
+
+  /* Effects */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 40px var(--leaf-glow);
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.2s ease;
 }
