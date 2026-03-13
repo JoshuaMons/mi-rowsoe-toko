@@ -41,8 +41,8 @@ const SITE_DATA = {
     {
       title: 'Pakketpunt & verzending',
       description: 'Afhalen en verzenden van pakketten o.a. via Mondial Relay. Handig in de buurt.',
-      image: 'images/foods/banner4.png',
-      alt: 'Pakketpunt en verzending',
+      image: 'https://images.unsplash.com/photo-1546421845-6471bdcf3edf?auto=format&fit=crop&w=800&q=80',
+      alt: 'Pakket dat verzonden wordt',
       href: '#pakketpunt'
     }
   ],
