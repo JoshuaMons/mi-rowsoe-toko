@@ -49,11 +49,8 @@ const SITE_DATA = {
 
   /* Gallery "In de winkel" — only food images (local) */
   galleryFood: [
-    { src: 'images/foods/banner1.png', alt: 'Surinaamse maaltijd 1' },
-    { src: 'images/foods/banner2.png', alt: 'Surinaamse maaltijd 2' },
-    { src: 'images/foods/banner3.png', alt: 'Surinaamse maaltijd 3' },
-    { src: 'images/foods/banner4.png', alt: 'Surinaamse maaltijd 4' },
-    { src: 'images/foods/banner5.png', alt: 'Surinaamse maaltijd 5' }
+    { src: 'images/foods/groente1.png', alt: 'Verse groenten in de winkel' },
+    { src: 'images/foods/groente2.png', alt: 'Assortiment tropische groenten' }
   ],
 
   gallery: [
