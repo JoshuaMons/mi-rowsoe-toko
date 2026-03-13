@@ -18,42 +18,42 @@ const SITE_DATA = {
 
   services: [
     {
+      title: 'Maaltijden',
+      description: 'Surinaamse gerechten en maaltijden om mee te nemen of ter plaatse te genieten.',
+      image: 'images/foods/banner1.png',
+      alt: 'Surinaamse maaltijden',
+      href: 'maaltijden.html'
+    },
+    {
       title: 'Tropische producten',
       description: 'Surinaamse en tropische levensmiddelen, specerijen en ingrediënten voor uw keuken.',
-      image: 'https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/478619566_1159432812854971_6556407718147035701_n.jpg?stp=dst-jpg_fb50_s320x320_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2a1932&_nc_ohc=NkA93E4WfFMQ7kNvwF0jMFw&_nc_oc=AdnX_FsvcYYgeaR5znanh-wbwo9fRtz7Ik2wNZYxSJNMS5sgWmt1jIS0beyFwA5LKPs&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_AfwICee9yNqcu7pELTjLisG-ewjy4wT5zSlu3FwLw9H1jQ&oe=69B6F6E8',
+      image: 'images/foods/banner2.png',
       alt: 'Mi Rowsoe tropische producten',
       href: 'producten.html'
     },
     {
       title: 'Verse groenten',
       description: 'Verse tropische groenten en dagverse producten voor een gezonde maaltijd.',
-      image: 'https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/486981436_1194161896048729_3708259555743544063_n.jpg?stp=c0.10.1284.1284a_dst-jpg_s160x160_tt6&_nc_cat=101&ccb=1-7&_nc_sid=14ed46&_nc_ohc=IZHx0Kj8WMUQ7kNvwH5RFox&_nc_oc=Adl9kTCERBti8eAwA_tY9EyEDCgoDlYSRdgcdW73DS3nGveP-I5kneg0wdZZC08Yg2c&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_AfwFQN3iM6qHNWqp8jZxMjRGZTHRG8zVOGuQJirXLsuUsQ&oe=69B6FB2D',
+      image: 'images/foods/banner3.png',
       alt: 'Verse groenten en producten',
       href: 'producten.html'
     },
     {
       title: 'Pakketpunt & verzending',
       description: 'Afhalen en verzenden van pakketten o.a. via Mondial Relay. Handig in de buurt.',
-      image: 'https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/484135697_1183781327086786_9157928637953022497_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s160x160_tt6&_nc_cat=102&ccb=1-7&_nc_sid=14ed46&_nc_ohc=fspNCuOD3GAQ7kNvwESjZ5r&_nc_oc=AdlOU1HmgWoPoYicp81b0zR6Qe12Wk587TVHHDvtJEHkGrBlcz9EN1s1hiApcl5DdhQ&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_AfzpkZtQ1gY8JLyal8eyTXRlaFxI29_FmcdkZ2S7-qsyVg&oe=69B6F07C',
+      image: 'images/foods/banner4.png',
       alt: 'Pakketpunt en verzending',
       href: '#pakketpunt'
-    },
-    {
-      title: 'Maaltijden',
-      description: 'Surinaamse gerechten en maaltijden om mee te nemen of ter plaatse te genieten.',
-      image: 'https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/482087118_1178509967613922_9117998297769990489_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=109&ccb=1-7&_nc_sid=14ed46&_nc_ohc=jlWy0oTqFsEQ7kNvwH1xHoX&_nc_oc=Adm2pnQCK23kRsA17xDDwh5CuR1566hAIgPVHPtPyB-FxSOsOi-4ik9VRaeeVXBGD1Q&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_AfzoS3KM_VkjkQ_3xi_u85GQ7kUS_rFlhrlXeG6p2_E3Pw&oe=69B70B58',
-      alt: 'Surinaamse maaltijden',
-      href: 'maaltijden.html'
     }
   ],
 
-  /* Gallery "In de winkel" — only food images */
+  /* Gallery "In de winkel" — only food images (local) */
   galleryFood: [
-    { src: 'https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/478619566_1159432812854971_6556407718147035701_n.jpg?stp=dst-jpg_fb50_s320x320_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2a1932&_nc_ohc=NkA93E4WfFMQ7kNvwF0jMFw&_nc_oc=AdnX_FsvcYYgeaR5znanh-wbwo9fRtz7Ik2wNZYxSJNMS5sgWmt1jIS0beyFwA5LKPs&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_AfwICee9yNqcu7pELTjLisG-ewjy4wT5zSlu3FwLw9H1jQ&oe=69B6F6E8', alt: 'Tropische producten' },
-    { src: 'https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/486981436_1194161896048729_3708259555743544063_n.jpg?stp=c0.10.1284.1284a_dst-jpg_s160x160_tt6&_nc_cat=101&ccb=1-7&_nc_sid=14ed46&_nc_ohc=IZHx0Kj8WMUQ7kNvwH5RFox&_nc_oc=Adl9kTCERBti8eAwA_tY9EyEDCgoDlYSRdgcdW73DS3nGveP-I5kneg0wdZZC08Yg2c&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_AfwFQN3iM6qHNWqp8jZxMjRGZTHRG8zVOGuQJirXLsuUsQ&oe=69B6FB2D', alt: 'Verse groenten' },
-    { src: 'https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/482087118_1178509967613922_9117998297769990489_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=109&ccb=1-7&_nc_sid=14ed46&_nc_ohc=jlWy0oTqFsEQ7kNvwH1xHoX&_nc_oc=Adm2pnQCK23kRsA17xDDwh5CuR1566hAIgPVHPtPyB-FxSOsOi-4ik9VRaeeVXBGD1Q&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_AfzoS3KM_VkjkQ_3xi_u85GQ7kUS_rFlhrlXeG6p2_E3Pw&oe=69B70B58', alt: 'Surinaamse maaltijden' },
-    { src: 'https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/487420018_9613736528741144_1329880785049705234_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=14ed46&_nc_ohc=Q2dcy-VGbyYQ7kNvwHF8Vfd&_nc_oc=AdkRcg_h9n29yhzsji0SH-ezzJxsFWepHoNiKzdfGlCj1JkwgYSu_9ym7nJPKbEX8Cw&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_Afz2To_usdgHxkiWf2ls-EgCTsQTXfpTIY51IOnZBpBtkw&oe=69B70C20', alt: 'Producten' },
-    { src: 'https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/484208287_9492072507574214_174222887427534548_n.jpg?stp=c180.0.1080.1080a_dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=14ed46&_nc_ohc=zz1xTBIuxV8Q7kNvwGCTGdA&_nc_oc=Adk1FsX81RAQrluq7YDH2tXdBC-SOR1w5e0dudp_9Aivpgo_O596hSqNxaf685Kzth8&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=twR-o9zXZQLpmvYvF1AuHg&_nc_ss=8&oh=00_AfzbbiZhORQ-QhJCedFq6BxVCfSDyO5VCZddL76sKg6fGA&oe=69B6F572', alt: 'Tropische producten en groenten' }
+    { src: 'images/foods/banner1.png', alt: 'Surinaamse maaltijd 1' },
+    { src: 'images/foods/banner2.png', alt: 'Surinaamse maaltijd 2' },
+    { src: 'images/foods/banner3.png', alt: 'Surinaamse maaltijd 3' },
+    { src: 'images/foods/banner4.png', alt: 'Surinaamse maaltijd 4' },
+    { src: 'images/foods/banner5.png', alt: 'Surinaamse maaltijd 5' }
   ],
 
   gallery: [
