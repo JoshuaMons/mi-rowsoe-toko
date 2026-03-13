@@ -20,21 +20,21 @@ const SITE_DATA = {
     {
       title: 'Maaltijden',
       description: 'Surinaamse gerechten en maaltijden om mee te nemen of ter plaatse te genieten.',
-      image: 'images/foods/banner1.png',
+      image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80',
       alt: 'Surinaamse maaltijden',
       href: 'maaltijden.html'
     },
     {
       title: 'Tropische producten',
       description: 'Surinaamse en tropische levensmiddelen, specerijen en ingrediënten voor uw keuken.',
-      image: 'images/foods/banner2.png',
+      image: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80',
       alt: 'Mi Rowsoe tropische producten',
       href: 'producten.html'
     },
     {
       title: 'Verse groenten',
       description: 'Verse tropische groenten en dagverse producten voor een gezonde maaltijd.',
-      image: 'images/foods/banner3.png',
+      image: 'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80',
       alt: 'Verse groenten en producten',
       href: 'producten.html'
     },
